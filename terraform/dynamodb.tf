@@ -14,9 +14,4 @@ resource "aws_dynamodb_table" "table" {
     name = "Character"
     type = "S"
   }
-
-  attribute {
-    name = "Prompt"
-    type = "S"
-  }
 }
