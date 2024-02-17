@@ -2,10 +2,10 @@ resource "aws_iam_role" "lambda" {
   name = "iam_for_${var.function_name}"
 
   assume_role_policy = jsonencode({
-    "Version": "2012-10-17",
-    "Statement": [
+    "Version" : "2012-10-17",
+    "Statement" : [
       {
-        "Action": "sts:AssumeRole",
+        "Action" : "sts:AssumeRole",
         "Principal" = {
           "Service" = [
             "lambda.amazonaws.com",

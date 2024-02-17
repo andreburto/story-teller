@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    encrypt = true
-    bucket = "mothersect-tf-state"
+    encrypt        = true
+    bucket         = "mothersect-tf-state"
     dynamodb_table = "mothersect-tf-state-lock"
-    key    = "story-teller"
-    region = "us-east-1"
+    key            = "story-teller"
+    region         = "us-east-1"
   }
 }
