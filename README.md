@@ -21,4 +21,5 @@ TBD
 
 ## Changes
 
+*2024-02-17:* Making some additional changes to the Terraform configuration.
 *2024-01-20:* Initial work begun. Created the Terraform configuration for the basic Lambda funtion that runs on a schedule.
