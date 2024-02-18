@@ -17,7 +17,7 @@ PROMPT_KEY_PATH = f"/{APPLICATION_NAME}/prompt_key"
 
 # Set up logging
 logger = logging.getLogger()
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 logger.addHandler(logging.StreamHandler(stream=sys.stdout))
 
 

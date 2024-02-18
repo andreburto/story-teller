@@ -17,9 +17,12 @@ TBD
   * Send email with HTML formatting.
   * Reduce number of AWS clients created.
 * Add tests that use [moto](https://docs.getmoto.org/en/latest/docs/services/lambda.html) to confirm the Lambda works.
-* Clean up the `build.sh` script, and add a means of deploying Terraform.
+* Automate deploying Terraform.
 
 ## Changes
+
+*2024-02-18:* Cleaned up `build.sh`.
+Updated the scheduler to just send an email once a day.
 
 *2024-02-18:* Created primitive build script to package the Lambda function and its dependencies.
 Still requires manual steps to deploy, but that will be fixed.

@@ -6,9 +6,9 @@ resource "aws_cloudwatch_log_group" "lambda" {
 
 # EventBridge
 resource "aws_cloudwatch_event_rule" "lambda" {
-  name                = "profile-generator-lambda-event-rule"
-  description         = "run the function every 12 hours"
-  schedule_expression = "rate(12 hours)"
+  name                = "${var.function_name}-lambda-event-rule"
+  description         = "Run the function every 24 hours."
+  schedule_expression = "rate(24 hours)"
 }
 
 resource "aws_cloudwatch_event_target" "lambda" {
