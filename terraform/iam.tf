@@ -27,3 +27,13 @@ resource "aws_iam_role_policy_attachment" "AmazonSSMReadOnlyAccess" {
   role       = aws_iam_role.lambda.name
   policy_arn = "arn:aws:iam::aws:policy/AmazonSSMReadOnlyAccess"
 }
+
+resource "aws_iam_role_policy_attachment" "AmazonDynamoDBReadOnlyAccess" {
+  role       = aws_iam_role.lambda.name
+  policy_arn = "arn:aws:iam::aws:policy/AmazonDynamoDBReadOnlyAccess"
+}
+
+resource "aws_iam_role_policy_attachment" "AmazonSESFullAccess" {
+  role       = aws_iam_role.lambda.name
+  policy_arn = "arn:aws:iam::aws:policy/AmazonSESFullAccess"
+}
