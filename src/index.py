@@ -67,7 +67,7 @@ def send_ses_email(subject: str, body: str) -> None:
                  "Body": {"Text": {"Data": body, }, }, })
 
 
-def handler(event: dict, context: dict) -> str:
+def handler(event: dict, context: dict) -> None:
     """
     This function is the entry point for the Lambda function.
     """
